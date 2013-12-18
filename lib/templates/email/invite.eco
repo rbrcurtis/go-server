@@ -1,0 +1,34 @@
+<% @subject = "You've been Invited to Come Play Go Online!" %>
+<html>
+<body>
+	<table width="100%">
+		<tr>
+			<td>
+				<table width="600px" style="background-color:#fff;" cellpadding="5" align="center">
+					<tr>
+						<td colspan="2" align="center">
+							<a href="<%= @format.url("#/welcome/#{@invite._id}") %>"><img src="<%= @format.url("/img/logo-white.png") %>" alt="Go Versus Logo" title="Go Versus" /></a>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<p><strong style="font-size:1.5em;">Come Play Go with <%= @invite.sender.username %>!</strong>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<p><%= @invite.sender.username %> has invited you to come play on Go Versus!  To accept, click the link below.
+							
+							<p style="font-size:1.2em; color: #5a164b;">
+								<a href="<%= @format.url("#/welcome/#{@invite._id}") %>"><%= @format.url("#/welcome/#{@invite._id}") %></a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
+
+
+

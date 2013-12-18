@@ -1,0 +1,4 @@
+certs/*
+config/local.coffee
+node_modules
+tasks.txt

@@ -1,0 +1,31 @@
+<% @subject = "Please Verify Your Email Address" %>
+<html>
+<body>
+	<table width="100%">
+		<tr>
+			<td>
+				<table width="600px" style="background-color:#fff;" cellpadding="5" align="center">
+					<tr>
+						<tdalign="center">
+							<a href="<%= @format.url("#/verify/#{@user._id+@user.verified.code}") %>"><img src="<%= @format.url("/img/logo-white.png") %>" alt="Go Versus Logo" title="Go Versus" /></a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Please verify your email address by clicking the link below.
+							
+							<p style="font-size:1.2em; color: #5a164b;">
+								<a href="<%= @format.url("#/verify/#{@user._id+@user.verified.code}") %>"><%= @format.url("#/verify/#{@user._id+@user.verified.code}") %></a>
+							</p>
+							<p>Thank you.</p>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
+
+
+

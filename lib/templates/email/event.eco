@@ -1,0 +1,30 @@
+<% @subject = @event.summary %>
+<html>
+<body>
+	<table width="100%">
+		<tr>
+			<td>
+				<table width="600px" style="background-color:#fff;" cellpadding="5" align="center">
+					<tr>
+						<td colspan="2" align="center">
+							<a href="<%= @format.url("#{@event.url}") %>"><img src="<%= @format.url("/img/logo-white.png") %>" alt="Go Versus Logo" title="Go Versus" /></a>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<p><%= @event.summary %>.  Click below to be taken to the <%= @event.documentType %>.
+							
+							<p style="font-size:1.2em; color: #5a164b;">
+								<a href="<%= @format.url("#{@event.url}") %>"><%= @format.url("#{@event.url}") %></a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
+
+
+
+
